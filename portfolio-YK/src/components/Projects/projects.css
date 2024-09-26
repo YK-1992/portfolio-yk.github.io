@@ -1,0 +1,165 @@
+.section_block{
+    padding-top: 8rem;
+}
+
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.project__block{
+position: relative;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+padding: 2rem;
+margin-bottom: 3rem;
+gap: 3rem;
+}
+
+.proj-title-section{
+    padding-bottom: 2rem;
+}
+.project__info-block{
+    width: 60vh;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.icon-style{
+    border-radius: 17px;
+    width: 65vh;
+    height: 43vh;
+}
+.text-st{
+    font-weight: 500;
+    cursor: default;}
+
+    .projects-demo a{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+.projects-demo{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    overflow: hidden;
+}
+.projects-demo a:hover{
+    color: rgb(110, 110, 111);
+    text-decoration-line: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(110, 41, 2);
+}
+.logo{
+    width: 30px;
+}
+img-title{
+    width: 60vh;
+    
+}
+
+.overlay{
+   
+    position: absolute;
+    top: 32px;
+    /* left: 32px; */
+    width: 65vh;
+    height: 43.5vh;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 17px;
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    
+}
+.overlay-tex{
+    color: white;
+    font-size: 18px;
+    opacity: 0;
+     transition: opacity 0.5 ease;
+     letter-spacing: 1ch;
+     text-align: center;
+}
+
+
+.img-title{
+    overflow: hidden;
+}
+.img-title:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 17px;
+    cursor: pointer;
+  
+ }
+
+ .img-title:hover .overlay .overlay-tex{
+ opacity: 1;
+ }
+
+ .create-lang{
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+    gap: 4rem;
+ }
+ 
+
+
+ @media screen and (max-width: 997px) {
+
+    .icon-style {
+    
+        width: 43vh;
+        height: 29vh;
+    }
+.text-st-p{
+    font-size: 13px;
+}
+
+    .overlay{
+   
+        position: absolute;
+        top: 17px;
+        /* left: 32px; */
+        width: 43vh;
+        height: 29vh;    
+    }
+
+    .text-st{
+        font-size: 19px;
+    }
+    .section_block {
+        padding-top: 2rem;
+    
+    }
+
+    .project__block{   
+        padding: 1rem;
+        margin-bottom: 2rem;
+        gap: 2rem;
+        }
+.project__info-block{
+    height: 33vh;
+}
+.projects-demo{
+    padding-top: 2px;
+    margin-top: 3px;
+}
+}
+  
