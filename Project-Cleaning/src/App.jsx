@@ -1,7 +1,7 @@
 
 import './App.css'
 import About from './components/About/About'
-// import HeaderBlock from './components/Header/header-block'
+import Contact from './components/Contact/Contact'
 import HomeSec from './components/Main/HomeSection'
 import Service from './components/Servise/Service'
 function App() {
@@ -12,6 +12,8 @@ function App() {
    <HomeSec/>
    <About/>
    <Service/>
+   <Contact/>
+   <section>Footer</section>
     </>
   )
 }

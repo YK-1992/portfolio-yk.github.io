@@ -8,16 +8,17 @@
 
 body{
   
-    background: linear-gradient(to right, #8f97a5d6, #0f243c); 
-  }
+  background: linear-gradient(to right, #8f97a5d6, #243b55); 
+}
 
   html{
+
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
   }
 
   section{
-  height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: center;
 
   }

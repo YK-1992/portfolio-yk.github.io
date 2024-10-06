@@ -47,12 +47,12 @@ const About = () => {
     }, []);
     return(
        
-        <section className="about-section" ref={aboutSectionRef}>
+        <section className="about-section" ref={aboutSectionRef} id='about'>
             <div className="about-container">
                 <div className="pages-section">
                     <img src="about-title1.jpg" alt="title-pages"  className="logo-style"/>
                 </div>
-                <motion.div className="about-inform-section"
+                <div className="about-inform-section"
               >
                     <motion.h1 variants={animateText}    animate={isInView ? "animate" : "initial"}
                 initial= "initial" className="text-title">
@@ -61,9 +61,11 @@ const About = () => {
                     <p>
                     There is no greater feeling than coming back to work to an empty trash can after stuffing your receptacle with the previous day is food, paper, and other refuse. Tasks like trash removal and other janitorial services add up and leave your business in a radiant condition. With more than 30 years of experience, we have ensured customer satisfaction by taking to heart every customers feedback. We strive to improve the way cleaning is done in Birmingham, Alabama. 
                     </p>
-                    <h2> Mission Statement</h2>
+
+
+                    <motion.h2 variants={animateText} animate={isInView ? "animate" : "initial"} initial="initial"> Mission Statement</motion.h2>
                     <p>he mission of Classic Commercial Cleaning is to give our clients outstanding customer service and quality services while remaining affordable.</p>
-                </motion.div>
+                </div>
 
             </div>
         </section>
