@@ -1,5 +1,6 @@
 import './style-header.scss';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll'; // Импорт ScrollLink для прокрутки
 
 // Настройки анимации для всего меню
@@ -29,24 +30,46 @@ const menuItemAnimation = {
 };
 
 const HeaderBlock = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  
+  useEffect(() =>{
+    const handleMouseMove = (e) =>{
+      if (e.clientY < 50){
+        setIsVisible(true)
+      }
+      else{
+        setIsVisible(false);
+      }
+    }
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return() =>{
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+  
+  const [isOpen, setOpen] = useState(false);
+
+
+
   const menuItems = [
     { name: 'Home', to: 'home' },
-    { name: 'Service', to: 'service' },
     { name: 'About', to: 'about' },
-    { name: 'Price', to: 'price' },
+    { name: 'Service', to: 'service' },
+   
     { name: 'Contact', to: 'contact' },
   ];
 
   return (
-    <header className='header-section'>
+    <header className={`header-section ${isVisible ? 'visible' : ''}`}>
       <motion.div
         className="header-container"
         variants={animateMotion}
         initial="initial"
         animate="animate"
       >
-        <div className="header-navBar">
-          <motion.ul className="nav-menu">
+        <div className={`header-navBar ${isOpen ? "active" : ""}`}>
+          <motion.ul className='nav-menu' >
             {/* Рендерим список элементов меню с анимацией и прокруткой */}
             {menuItems.map((item) => (
               <motion.li
@@ -69,8 +92,12 @@ const HeaderBlock = () => {
           </motion.ul>
         </div>
       </motion.div>
+      <button className="burger-btn" onClick={()=> setOpen(!isOpen)}>
+<img src="./list.png" alt="" width={40}/>
+        </button>
     </header>
   );
 };
 
 export default HeaderBlock; 
+

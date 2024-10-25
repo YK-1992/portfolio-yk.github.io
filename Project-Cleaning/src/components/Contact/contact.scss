@@ -1,7 +1,7 @@
 .contact-section{
 
-  padding-top: 2rem;
-    background: linear-gradient(to right, #8f97a5d6, #243b55); 
+  padding-top: 8rem;
+//   background: linear-gradient(to right, #8f97a5d6, #243b55); 
 
 
     .logo {
@@ -122,7 +122,7 @@ h1{
     font-size: 22px;
 }
 
-@media screen and (max-width: 997px) {
+@media (width <= 997px) {
     .h1-ts {
         font-size: 25px;
         font-weight: 500;
@@ -138,4 +138,17 @@ h1{
 .btn{
     margin: 0 auto;
 }  
+.contact-section{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.contact-section-form{
+    gap: 0;
+}
+}
+
+@media (width <= 530px) {
+    .contact__talk-section h1 {
+        font-size: 53px;
+    }
 }
