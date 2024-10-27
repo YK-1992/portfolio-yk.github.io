@@ -112,7 +112,8 @@ const Service = () => {
               <img src="/walk.jpg" alt="flexible dog care" />
             </div>
             <div className="textContainer">
-              <h2>Flexible Dog Care - Sitting & Walking</h2>
+              <h2>Flexible Dog Care - <br />
+              Sitting & Walking</h2>
               <p>
                 Tailored Dog Care Services by YK: Your Dog’s Needs, Our Focus
               </p>
@@ -150,7 +151,7 @@ const Service = () => {
                 onClick={() => toggleMenu(4)}
               >
                 More
-              </motion.button>
+              </motion.button> 
             </div>
             <div className={`menu-icon ${menuVisible[4] ? "visible" : ""}`}>
              <GardService/>

@@ -23,12 +23,12 @@ return (
                 
                 
                 > Know Something About Our Company</motion.h1>
-                <p>There is no greater feeling than coming back to work to an empty 
-                    trash can after stuffing your receptacle with the previous day is food, 
-                    paper, and other refuse. Tasks like trash removal and other janitorial 
-                    services add up and leave your business in a radiant condition.
-                     With more than 4 years of experience, we have ensured customer satisfaction by taking to heart every customers feedback. 
-                     We strive to improve the way cleaning is done in Berlin. 
+                <p>
+                Welcome to YK Services – your go-to solution for all home service needs! From professional
+                cleaning and pet care to small repairs and moving support, our platform connects you with trusted 
+                service providers to make your life easier. Whether you need help tidying up, caring for your pets,
+                 fixing minor issues, or organizing a hassle-free move, we’ve got you covered. Book a service today 
+                 and experience quality, reliability, and convenience at your doorstep.
                     </p>
                     <motion.h2 ref={effRef}
                       initial={{x: 100, opacity: 0}}
