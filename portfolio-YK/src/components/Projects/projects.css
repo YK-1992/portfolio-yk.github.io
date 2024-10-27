@@ -45,7 +45,11 @@ gap: 3rem;
 }
 .text-st{
     font-weight: 500;
-    cursor: default;}
+    cursor: default;
+}
+
+
+    
 
     .projects-demo a{
         display: flex;
@@ -75,7 +79,7 @@ img-title{
 .overlay{
    
     position: absolute;
-    top: 32px;
+    top: 30px;
     /* left: 32px; */
     width: 65vh;
     height: 43.5vh;
@@ -89,11 +93,13 @@ img-title{
     
 }
 .overlay-tex{
-    color: white;
-    font-size: 18px;
+    color: orangered;
+    text-shadow: 1px 1px 3px rgb(105, 100, 100);
+    font-size: 19px;
+    font-weight: 400;
     opacity: 0;
      transition: opacity 0.5 ease;
-     letter-spacing: 1ch;
+     letter-spacing: 0.3ch;
      text-align: center;
 }
 
@@ -118,8 +124,14 @@ img-title{
     padding-top: 4rem;
     gap: 4rem;
  }
- 
+ .text-st-p{
+    font-size: 17px;
+    text-wrap: balance;
+    margin: 0 auto;
+    padding-left: 2rem;
 
+}
+ 
 
  @media screen and (max-width: 997px) {
 
@@ -130,6 +142,7 @@ img-title{
     }
 .text-st-p{
     font-size: 13px;
+
 }
 
     .overlay{
