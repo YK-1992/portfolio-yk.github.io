@@ -1,11 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from 'swiper/modules';
+
 import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { forwardRef } from "react";
 import "./projects.css";
 
 const Projects = forwardRef((props, ref) => {
+  
   return (
     <section ref={ref} className="section_block">
       <div className="projects-container">
@@ -14,7 +17,22 @@ const Projects = forwardRef((props, ref) => {
           <p>More recent work</p>
         </div>
 
-        <Swiper pagination={true} modules={[Pagination]}>
+        <Swiper 
+         slidesPerView={1}
+         spaceBetween={25}
+         loop={true}
+
+         pagination={{
+           clickable: true,
+         }}
+         navigation={true}
+
+        
+         modules={[Pagination, Navigation]}
+     
+         className="mySwiper"
+       
+        >
           <SwiperSlide>
             {/* Project1 */}
             <div className="project__block project1">
@@ -45,7 +63,7 @@ const Projects = forwardRef((props, ref) => {
                     <span>Code</span>{" "}
                     <img src="./github.png" alt="github" className="logo" />{" "}
                   </a>
-                  <a href="../Project-Cleaning/">
+                  <a href="https://yk-poject-clean.netlify.app/">
                     {" "}
                     <span>Demo</span>{" "}
                     <img src="./link.png" alt="github" className="logo" />{" "}
@@ -60,33 +78,33 @@ const Projects = forwardRef((props, ref) => {
 
             <div className="project__block project1">
               <div className="img-title">
-                <img src="./img2.jpg" alt="" className="icon-style" />
+                <img src="./sushi-app.png" alt="" className="icon-style" />
                 <div className="overlay">
                   <div className="overlay-tex">
-                    <h2>Project 1</h2>
+                    <h2>Sushi-app</h2>
                     <div className="create-lang">
-                      <span>React</span>
-                      <span>Scss</span>
+                      <p>React</p>
+                      <p>Redux Toolkit</p>
+                      <p>MUI</p>
+                     
                     </div>
                   </div>
                 </div>
               </div>
               <div className="project__info-block">
-                <h3 className="text-st">Name Project1</h3>
+                <h3 className="text-st">Sushi-app</h3>
                 <p className="text-st-p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  eveniet sequi rerum quaerat est similique officia magnam hic
-                  exercitationem molestiae accusantium quod architecto delectus
-                  necessitatibus illum, recusandae voluptas. Harum, delectus!
+                A responsive e-commerce web application for ordering sushi, built with React and Redux Toolkit. The project features a user-friendly interface, a dynamic shopping cart, and seamless state management with Redux Toolkit. Implemented adaptive design for a smooth experience across devices. The app includes product filtering, category selection, 
+                and a visually appealing layout. Secure online payments are integrated for a smooth and reliable checkout experience.
                 </p>
 
                 <div className="projects-demo">
-                  <a href="https://github.com/YK-1992/projectDemo">
+                  <a href="https://github.com/YK-1992/Sushi-app">
                     {" "}
                     <span>Code</span>{" "}
                     <img src="./github.png" alt="github" className="logo" />{" "}
                   </a>
-                  <a href="https://github.com/YK-1992/projectDemo">
+                  <a href="https://shushi-app.netlify.app/">
                     {" "}
                     <span>Demo</span>{" "}
                     <img src="./link.png" alt="github" className="logo" />{" "}
@@ -146,8 +164,8 @@ const Projects = forwardRef((props, ref) => {
                   <div className="overlay-tex">
                     <h2>Project 1</h2>
                     <div className="create-lang">
-                      <span>React</span>
-                      <span>Scss</span>
+                      <p>React</p>
+                      <p>Scss</p>
                     </div>
                   </div>
                 </div>

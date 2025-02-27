@@ -21,9 +21,9 @@ padding-top: 4rem;
 }
 
 .ps-text{
-    width: 35rem;
+    width: 550px;
     overflow-wrap: break-word;
-    /* hyphens: auto; */
+    hyphens: auto;
     
 }
 
